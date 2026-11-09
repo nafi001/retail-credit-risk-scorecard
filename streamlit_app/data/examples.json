@@ -1,0 +1,170 @@
+[
+  {
+    "name": "Typical low-risk applicant",
+    "simulated": true,
+    "inputs": {
+      "age": 45,
+      "monthly_income": 5000,
+      "debt_ratio": 0.3,
+      "utilisation": 0.2,
+      "open_credit_lines": 6,
+      "real_estate_loans": 1,
+      "past_due_30_59": 0,
+      "past_due_60_89": 0,
+      "past_due_90plus": 0,
+      "n_dependents": 2
+    },
+    "status": "SCORED",
+    "zone": "Accept",
+    "score": 601,
+    "calibrated_pd": 0.012895405891292018,
+    "risk_band": "Very low risk"
+  },
+  {
+    "name": "Borderline applicant",
+    "simulated": true,
+    "inputs": {
+      "age": 38,
+      "monthly_income": 4200,
+      "debt_ratio": 0.45,
+      "utilisation": 0.75,
+      "open_credit_lines": 7,
+      "real_estate_loans": 1,
+      "past_due_30_59": 1,
+      "past_due_60_89": 0,
+      "past_due_90plus": 0,
+      "n_dependents": 2
+    },
+    "status": "SCORED",
+    "zone": "Review",
+    "score": 548,
+    "calibrated_pd": 0.12747278213277485,
+    "risk_band": "High risk"
+  },
+  {
+    "name": "High-risk applicant",
+    "simulated": true,
+    "inputs": {
+      "age": 45,
+      "monthly_income": 5000,
+      "debt_ratio": 0.3,
+      "utilisation": 1.2,
+      "open_credit_lines": 6,
+      "real_estate_loans": 1,
+      "past_due_30_59": 3,
+      "past_due_60_89": 2,
+      "past_due_90plus": 2,
+      "n_dependents": 2
+    },
+    "status": "SCORED",
+    "zone": "Decline",
+    "score": 428,
+    "calibrated_pd": 0.6803989822372069,
+    "risk_band": "Very high risk"
+  },
+  {
+    "name": "No open credit lines",
+    "simulated": true,
+    "inputs": {
+      "age": 40,
+      "monthly_income": 3000,
+      "debt_ratio": 0.35,
+      "utilisation": null,
+      "open_credit_lines": 0,
+      "real_estate_loans": 0,
+      "past_due_30_59": 0,
+      "past_due_60_89": 0,
+      "past_due_90plus": 0,
+      "n_dependents": 2
+    },
+    "status": "SCORED",
+    "zone": "Review",
+    "score": 549,
+    "calibrated_pd": 0.12324387260830781,
+    "risk_band": "High risk"
+  },
+  {
+    "name": "Income not provided",
+    "simulated": true,
+    "inputs": {
+      "age": 45,
+      "monthly_income": null,
+      "debt_ratio": null,
+      "utilisation": 0.2,
+      "open_credit_lines": 6,
+      "real_estate_loans": 1,
+      "past_due_30_59": 0,
+      "past_due_60_89": 0,
+      "past_due_90plus": 0,
+      "n_dependents": 2
+    },
+    "status": "SCORED",
+    "zone": "Accept",
+    "score": 598,
+    "calibrated_pd": 0.015051687535476099,
+    "risk_band": "Very low risk"
+  },
+  {
+    "name": "Implausible utilisation (data check)",
+    "simulated": true,
+    "inputs": {
+      "age": 45,
+      "monthly_income": 5000,
+      "debt_ratio": 0.3,
+      "utilisation": 15,
+      "open_credit_lines": 6,
+      "real_estate_loans": 1,
+      "past_due_30_59": 0,
+      "past_due_60_89": 0,
+      "past_due_90plus": 0,
+      "n_dependents": 2
+    },
+    "status": "SCORED",
+    "zone": "Review",
+    "score": 590,
+    "calibrated_pd": 0.02242790406343935,
+    "risk_band": "Low risk"
+  },
+  {
+    "name": "Special-coded delinquency",
+    "simulated": true,
+    "inputs": {
+      "age": 45,
+      "monthly_income": 5000,
+      "debt_ratio": 0.3,
+      "utilisation": 0.2,
+      "open_credit_lines": 6,
+      "real_estate_loans": 1,
+      "past_due_30_59": 0,
+      "past_due_60_89": 0,
+      "past_due_90plus": 98,
+      "n_dependents": 2
+    },
+    "status": "REFERRED_SPECIAL_CODE",
+    "zone": null,
+    "score": null,
+    "calibrated_pd": null,
+    "risk_band": null
+  },
+  {
+    "name": "Under 18",
+    "simulated": true,
+    "inputs": {
+      "age": 17,
+      "monthly_income": 5000,
+      "debt_ratio": 0.3,
+      "utilisation": 0.2,
+      "open_credit_lines": 6,
+      "real_estate_loans": 1,
+      "past_due_30_59": 0,
+      "past_due_60_89": 0,
+      "past_due_90plus": 0,
+      "n_dependents": 2
+    },
+    "status": "INELIGIBLE",
+    "zone": null,
+    "score": null,
+    "calibrated_pd": null,
+    "risk_band": null
+  }
+]

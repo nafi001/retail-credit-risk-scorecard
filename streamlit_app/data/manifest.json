@@ -1,0 +1,67 @@
+[
+  {
+    "file": "age_groups.csv",
+    "bytes": 1456,
+    "sha256": "add81e2a5a7e55140b2f103c525ad9d7177383af78dfa9a27598704d2ecb6f47"
+  },
+  {
+    "file": "examples.json",
+    "bytes": 3923,
+    "sha256": "c7de7ea9600ac7bfc8d1598ff4d23d6f5606e5e79ad824e8921636d4f213a3d1"
+  },
+  {
+    "file": "master_scale_lookup.csv",
+    "bytes": 15121,
+    "sha256": "3e38b9ddfb53ab02e2b51210f307b1baef0134f508d99f83f4a062d32c98f3b3"
+  },
+  {
+    "file": "policy_zones.csv",
+    "bytes": 2792,
+    "sha256": "f0101c85d75de664b681f163de56967d5ea07d3cafdd723bb998d2f5b0d212ec"
+  },
+  {
+    "file": "psi.csv",
+    "bytes": 868,
+    "sha256": "119d85aa5cf932ade459c2cf45a3819afb19192804f84d6632915974b3a626b3"
+  },
+  {
+    "file": "reliability_deciles.csv",
+    "bytes": 2053,
+    "sha256": "02a00517fb5fd0de81800aaf9ed33523842b93c5325cedb03a64a4c6c8bade70"
+  },
+  {
+    "file": "risk_bands.csv",
+    "bytes": 2231,
+    "sha256": "edb74f38f67548cc6fce0adc1802dd386b881da8e36192170cd5399ce90a62b4"
+  },
+  {
+    "file": "score_counts.csv",
+    "bytes": 12301,
+    "sha256": "30b322fca454aaab275f1c56a9946c60a422956c7a45d85c8269a70b706baf51"
+  },
+  {
+    "file": "scorecard_table.csv",
+    "bytes": 3658,
+    "sha256": "c948315d5ca5eb6dbd2162998a674152750caef4cbb0325084dd265ad86db178"
+  },
+  {
+    "file": "segments.csv",
+    "bytes": 2201,
+    "sha256": "ed80959923a633920a5cba55146fe46fa1a380d2446fa629cfd86242c9cc8720"
+  },
+  {
+    "file": "sensitivity_models.csv",
+    "bytes": 368,
+    "sha256": "7f1ce85050bc1f806a7eab86336af9e84ae9953d5c90f30791c953c36ce6ac81"
+  },
+  {
+    "file": "summary.json",
+    "bytes": 7727,
+    "sha256": "abe3fd7b95488bd75213a3bacfa07b142ad8389147ed02525049e34aa474a5af"
+  },
+  {
+    "file": "variable_iv.csv",
+    "bytes": 742,
+    "sha256": "7c723abe2067dc9a1d5fd2a116c4b5117082c0252b4d9208d11dcf2dfe29a2af"
+  }
+]

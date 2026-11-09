@@ -1,0 +1,274 @@
+{
+  "project": "Retail credit risk scorecard (educational prototype)",
+  "data_source": {
+    "name": "Give Me Some Credit (Kaggle competition data)",
+    "url": "https://www.kaggle.com/competitions/GiveMeSomeCredit",
+    "note": "Origin, country and period are undocumented. NOT Bangladeshi bank data. The data are not redistributed in this repository."
+  },
+  "split": "Stratified random 60/20/20 split; not out-of-time validation",
+  "samples": {
+    "development": {
+      "n_scored": 89840,
+      "n_default": 5932,
+      "default_rate": 0.06602849510240427,
+      "n_policy_referrals": 160,
+      "n_policy_referral_defaults": 84
+    },
+    "validation": {
+      "n_scored": 29946,
+      "n_default": 1976,
+      "default_rate": 0.06598544045949375,
+      "n_policy_referrals": 54,
+      "n_policy_referral_defaults": 29
+    },
+    "test": {
+      "n_scored": 29944,
+      "n_default": 1971,
+      "default_rate": 0.06582286935613145,
+      "n_policy_referrals": 56,
+      "n_policy_referral_defaults": 34
+    }
+  },
+  "scaling": {
+    "base_score": 600.0,
+    "base_odds": 50.0,
+    "pdo": 20.0,
+    "factor": 28.85390081777927,
+    "offset": 487.1228762045055,
+    "base_points": 370
+  },
+  "master_scale": {
+    "a": -3.2910190893527127,
+    "b": -0.9406395754404352,
+    "c": -0.05370906713435745,
+    "center": 580.0,
+    "scale": 20.0,
+    "x_star": -8.756804256973515,
+    "score_star": 404.8639148605297
+  },
+  "risk_band": {
+    "labels": [
+      "Very high risk",
+      "High risk",
+      "Moderate risk",
+      "Low risk",
+      "Very low risk"
+    ],
+    "score_thresholds": [
+      593,
+      573,
+      550,
+      525
+    ],
+    "pd_cuts": [
+      0.02,
+      0.05,
+      0.12,
+      0.25
+    ],
+    "note": "Cut-points are illustrative risk-appetite assumptions"
+  },
+  "policy": {
+    "thresholds": {
+      "t_decline": 529,
+      "t_accept": 563
+    },
+    "overrides": [
+      "special-coded delinquency: referred, not scored",
+      "no open credit lines: at most Review",
+      "implausible utilisation (>10): at most Review",
+      "age < 18: ineligible"
+    ]
+  },
+  "scenarios": {
+    "Tight margin / high loss": {
+      "R": 0.06,
+      "LGD": 0.75
+    },
+    "Base": {
+      "R": 0.1,
+      "LGD": 0.65
+    },
+    "Wide margin / lower loss": {
+      "R": 0.16,
+      "LGD": 0.55
+    }
+  },
+  "bb_rates": {
+    "20% (substandard)": 0.2,
+    "50% (doubtful)": 0.5,
+    "100% (bad/loss)": 1.0
+  },
+  "performance": {
+    "development": {
+      "n": 89840.0,
+      "defaults": 5932.0,
+      "observed": 0.0660284951024042,
+      "mean_pd": 0.0660292790562961,
+      "auc": 0.8556528140138457,
+      "gini": 0.7113056280276915,
+      "ks": 0.55460144014777,
+      "brier": 0.0493850594147269,
+      "brier_skill": 0.1991880315548995,
+      "log_loss": 0.1800653253279084,
+      "citl": -1.588034489357162e-05,
+      "slope": 0.9999896765127388
+    },
+    "validation": {
+      "n": 29946.0,
+      "defaults": 1976.0,
+      "observed": 0.0659854404594937,
+      "mean_pd": 0.0652590634121298,
+      "auc": 0.8548342624906095,
+      "gini": 0.7096685249812189,
+      "ks": 0.5561345368591855,
+      "brier": 0.0487069095691771,
+      "brier_skill": 0.2097057747202469,
+      "log_loss": 0.1786930634186688,
+      "citl": 0.0148273953803537,
+      "slope": 1.0110044723727944
+    },
+    "test": {
+      "n": 29944.0,
+      "defaults": 1971.0,
+      "observed": 0.0658228693561314,
+      "mean_pd": 0.066124060430757,
+      "auc": 0.854686777310795,
+      "gini": 0.70937355462159,
+      "ks": 0.5515816576261849,
+      "brier": 0.0492082655115726,
+      "brier_skill": 0.1997383302403291,
+      "log_loss": 0.1799432100601142,
+      "citl": -0.0060998763904351,
+      "slope": 0.9988573282243868
+    }
+  },
+  "discrimination": [
+    {
+      "metric": "auc",
+      "sample": "development",
+      "estimate": 0.8556528140138457,
+      "ci_low": 0.8506194617403677,
+      "ci_high": 0.8609468924530647
+    },
+    {
+      "metric": "gini",
+      "sample": "development",
+      "estimate": 0.7113056280276915,
+      "ci_low": 0.7012389234807356,
+      "ci_high": 0.7218937849061293
+    },
+    {
+      "metric": "ks",
+      "sample": "development",
+      "estimate": 0.55460144014777,
+      "ci_low": 0.5442938823597545,
+      "ci_high": 0.5661645071564968
+    },
+    {
+      "metric": "auc",
+      "sample": "validation",
+      "estimate": 0.8548342624906095,
+      "ci_low": 0.8448456279902467,
+      "ci_high": 0.8635767819154071
+    },
+    {
+      "metric": "gini",
+      "sample": "validation",
+      "estimate": 0.7096685249812189,
+      "ci_low": 0.6896912559804932,
+      "ci_high": 0.7271535638308142
+    },
+    {
+      "metric": "ks",
+      "sample": "validation",
+      "estimate": 0.5561345368591855,
+      "ci_low": 0.536990376725683,
+      "ci_high": 0.5760414617124805
+    },
+    {
+      "metric": "auc",
+      "sample": "test",
+      "estimate": 0.854686777310795,
+      "ci_low": 0.8460490164138204,
+      "ci_high": 0.8626902331873088
+    },
+    {
+      "metric": "gini",
+      "sample": "test",
+      "estimate": 0.70937355462159,
+      "ci_low": 0.6920980328276406,
+      "ci_high": 0.7253804663746175
+    },
+    {
+      "metric": "ks",
+      "sample": "test",
+      "estimate": 0.5515816576261849,
+      "ci_low": 0.5341039943556891,
+      "ci_high": 0.5701231488203733
+    }
+  ],
+  "calibration": [
+    {
+      "sample": "development",
+      "mean_pd": 0.0660292790562961,
+      "observed": 0.0660284951024042,
+      "brier": 0.0493850594147269,
+      "brier_skill": 0.1991880315548995,
+      "log_loss": 0.1800653253279084,
+      "citl": -1.588034489357162e-05,
+      "citl_low": -0.0294464699718271,
+      "citl_high": 0.0294147092820399,
+      "slope": 0.9999896765127388,
+      "slope_low": 0.9789481060678552,
+      "slope_high": 1.0210312469576222
+    },
+    {
+      "sample": "validation",
+      "mean_pd": 0.0652590634121298,
+      "observed": 0.0659854404594937,
+      "brier": 0.0487069095691771,
+      "brier_skill": 0.2097057747202469,
+      "log_loss": 0.1786930634186688,
+      "citl": 0.0148273953803537,
+      "citl_low": -0.036229151564288,
+      "citl_high": 0.0658839423249955,
+      "slope": 1.0110044723727944,
+      "slope_low": 0.974446876705895,
+      "slope_high": 1.047562068039694
+    },
+    {
+      "sample": "test",
+      "mean_pd": 0.066124060430757,
+      "observed": 0.0658228693561314,
+      "brier": 0.0492082655115726,
+      "brier_skill": 0.1997383302403291,
+      "log_loss": 0.1799432100601142,
+      "citl": -0.0060998763904351,
+      "citl_low": -0.0571193601108505,
+      "citl_high": 0.0449196073299802,
+      "slope": 0.9988573282243868,
+      "slope_low": 0.962374279766484,
+      "slope_high": 1.0353403766822895
+    }
+  ],
+  "bundle": {
+    "file": "models/scorecard_m1_bundle_v2.joblib",
+    "sha256": "9970d124797d57aaf1284e9c257dd22912e1ab6a4330b7e294890aa5dd0ab639",
+    "status": "Calibration fitted on development only; band cut-points are illustrative; test sample not yet used",
+    "versions": {
+      "python": "3.13.18",
+      "pandas": "2.2.3",
+      "numpy": "2.4.6",
+      "sklearn": "1.6.1",
+      "statsmodels": "0.15.0",
+      "optbinning": "1.0.0"
+    }
+  },
+  "disclaimer": "Educational prototype built on a public dataset of unknown origin; it is not Bangladeshi bank data. Scores and zones are illustrative, financial assumptions are not observed values, and the model has not been independently validated or approved by any regulator. Not for live lending decisions.",
+  "bundle_json": {
+    "file": "models/scorecard_m1_bundle_v2.json",
+    "sha256": "c3db7076e29396ddb82c6597bf488c998a7b1bf8d128a8e9a5d1c807d573faba",
+    "note": "Plain-text export of the frozen joblib bundle; verified to give identical scores"
+  }
+}

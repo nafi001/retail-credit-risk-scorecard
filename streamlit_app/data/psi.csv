@@ -1,0 +1,17 @@
+item,psi,sample
+score distribution (20-point bins),0.0002242705142184,validation
+risk-band distribution,0.0001742810006267,validation
+variable: utilisation,0.0004483980502243,validation
+variable: past_due_30_59,0.0001895050696332,validation
+variable: past_due_60_89,3.725827917003889e-05,validation
+variable: past_due_90plus,6.622530580467253e-05,validation
+variable: debt_ratio,0.0003032665708697,validation
+variable: real_estate_loans,7.024906091319708e-05,validation
+score distribution (20-point bins),0.000326658311972,test
+risk-band distribution,9.670574353130776e-05,test
+variable: utilisation,0.0005193043941866,test
+variable: past_due_30_59,0.0001621909790211,test
+variable: past_due_60_89,0.0002908356692643,test
+variable: past_due_90plus,0.000194766260944,test
+variable: debt_ratio,0.0004189376037097,test
+variable: real_estate_loans,0.0001234452915975,test
