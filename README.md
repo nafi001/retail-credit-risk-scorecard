@@ -25,4 +25,4 @@ Invalid, under-18 and special-coded applications return an explicit status and n
 ## Licence and attribution
 - **Code:** MIT licence (see `LICENSE`).
 - **Data:** not distributed here. The Give Me Some Credit data come from a Kaggle competition and are subject to its rules. [ADD: exact data-use wording from the competition's "Data Access and Use" section, after checking it]
-- **Author:** [ADD: name and contact link]
+
