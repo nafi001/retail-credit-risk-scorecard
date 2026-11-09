@@ -1,6 +1,6 @@
 # Runtime dependencies of the Streamlit app, pinned to the versions it was tested with.
 # Tested with Python 3.13: choose the same Python version under Advanced settings when deploying.
-streamlit>=1.40,<2
-pandas>=2.2.3,<3
-numpy>=2.0,<3
-plotly>=5.24
+streamlit==1.67.0
+pandas==2.2.3
+numpy==2.4.6
+plotly==5.24.1
