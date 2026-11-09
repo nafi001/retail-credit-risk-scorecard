@@ -1,0 +1,28 @@
+{
+  "retrieved_utc": "2026-11-08T06:04:52+00:00",
+  "source_url": "https://www.kaggle.com/competitions/GiveMeSomeCredit",
+  "python": "3.13.18",
+  "pandas": "2.2.3",
+  "files": [
+    {
+      "name": "Data Dictionary.xls",
+      "bytes": 14848,
+      "sha256": "8e32190d0403bc9ffb181f56e6bff0b8dfda75d16a5539fbfefde9c706d40494"
+    },
+    {
+      "name": "cs-test.csv",
+      "bytes": 4983329,
+      "sha256": "bab363a2a807218d32a51f5fc9668b8be7977795065edd386abc8546abaa5b78"
+    },
+    {
+      "name": "cs-training.csv",
+      "bytes": 7564965,
+      "sha256": "1bd46da486a5708c58c7b01a034fae2a13b327f6f7b62ea7ba4fe3b5824b24ac"
+    },
+    {
+      "name": "sampleEntry.csv",
+      "bytes": 1907226,
+      "sha256": "578b4b01d0f6ed7f97f1988afff0c41194e72bf4b25707119903d4de3dc1dcea"
+    }
+  ]
+}

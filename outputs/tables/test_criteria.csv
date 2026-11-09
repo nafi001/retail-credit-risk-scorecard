@@ -1,0 +1,7 @@
+,result
+Test Gini inside validation 95% CI,True
+Test KS inside validation 95% CI,True
+Calibration-in-the-large CI contains 0,True
+Calibration slope CI contains 1,True
+Risk bands with calibrated PD inside test CI,5 of 5
+Observed default rate rises with risk band,True

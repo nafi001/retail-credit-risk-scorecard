@@ -1,0 +1,14 @@
+feature,kind,source_fields,definition,special_codes,hypothesised_direction,note
+age,raw,age,Age in years,none,older -> lower PD,Policy-sensitive; run with/without
+monthly_income,raw,MonthlyIncome,Monthly income,NaN = missing or zero (not available),higher -> lower PD,Very low values may be unreliable
+n_dependents,raw,NumberOfDependents,Number of dependents,NaN = missing,more -> higher PD (weak),Household characteristic; fairness review
+open_credit_lines,raw,NumberOfOpenCreditLinesAndLoans,Open loans and credit lines,none,unclear / U-shaped,
+real_estate_loans,raw,NumberRealEstateLoansOrLines,Real-estate loans and lines,none,unclear / U-shaped,
+past_due_30_59,raw,NumberOfTime30-59DaysPastDueNotWorse,Count of 30-59 day delinquencies,none,more -> higher PD,
+past_due_60_89,raw,NumberOfTime60-89DaysPastDueNotWorse,Count of 60-89 day delinquencies,none,more -> higher PD,
+past_due_90plus,raw,NumberOfTimes90DaysLate,Count of 90+ day delinquencies,none,more -> higher PD,Timing relative to outcome undocumented
+utilisation,cleaned,RevolvingUtilizationOfUnsecuredLines; open lines,Revolving utilisation,-1: no open lines; -2: > 10,higher -> higher PD,Zero is its own bin (higher risk than low)
+debt_ratio,cleaned,DebtRatio; MonthlyIncome,Debt ratio where income > 0,-1: income missing or zero,higher -> higher PD,Includes living costs per dictionary
+total_past_due,derived,three past-due counts,Sum of the three delinquency counts,none,more -> higher PD,Inherits 90+ timing caveat
+worst_delinquency,derived,three past-due counts,"Worst level: 0 none, 1 30-59, 2 60-89, 3 90+",none,higher -> higher PD,Inherits 90+ timing caveat
+open_lines_non_re,derived,open lines; real-estate loans,Open lines excluding real-estate loans,-2: real estate > open lines,unclear,Correlated with open_credit_lines

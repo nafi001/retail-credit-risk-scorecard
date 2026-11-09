@@ -1,0 +1,6 @@
+,development,validation,test
+C1 Accept-zone default-rate upper bound < 7.4%,True,True,True
+C2 Decline-zone default-rate lower bound > 22.5%,True,True,True
+C3 Review zone <= 20% of scored applicants,True,True,True
+C4 Accept profitable and Decline loss-making in all scenarios,True,True,True
+C5 Calibrated PD inside observed 95% CI in all three zones,True,True,True

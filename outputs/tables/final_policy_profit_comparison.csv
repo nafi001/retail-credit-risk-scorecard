@@ -1,0 +1,37 @@
+sample,scenario,strategy,profit
+development,Tight margin / high loss,Accept every scored applicant,0.6505333333333329
+development,Tight margin / high loss,P1: single cut-off 550,3.095466666666667
+development,Tight margin / high loss,Final policy: Accept zone only,3.238566666666667
+development,Tight margin / high loss,Final policy: Accept + Review approved as is,2.6298333333333335
+development,Base,Accept every scored applicant,5.0388888888888905
+development,Base,P1: single cut-off 550,6.685777777777779
+development,Base,Final policy: Accept zone only,6.379611111111111
+development,Base,Final policy: Accept + Review approved as is,6.547722222222222
+development,Wide margin / lower loss,Accept every scored applicant,11.291866666666667
+development,Wide margin / lower loss,P1: single cut-off 550,11.944022222222221
+development,Wide margin / lower loss,Final policy: Accept zone only,11.009344444444444
+development,Wide margin / lower loss,Final policy: Accept + Review approved as is,12.244166666666667
+validation,Tight margin / high loss,Accept every scored applicant,0.6540000000000001
+validation,Tight margin / high loss,P1: single cut-off 550,3.1496999999999997
+validation,Tight margin / high loss,Final policy: Accept zone only,3.2462999999999993
+validation,Tight margin / high loss,Final policy: Accept + Review approved as is,2.701199999999999
+validation,Base,Accept every scored applicant,5.042
+validation,Base,P1: single cut-off 550,6.751500000000001
+validation,Base,Final policy: Accept zone only,6.4005
+validation,Base,Final policy: Accept + Review approved as is,6.622
+validation,Wide margin / lower loss,Accept every scored applicant,11.294666666666664
+validation,Wide margin / lower loss,P1: single cut-off 550,12.029033333333333
+validation,Wide margin / lower loss,Final policy: Accept zone only,11.0493
+validation,Wide margin / lower loss,Final policy: Accept + Review approved as is,12.326533333333334
+test,Tight margin / high loss,Accept every scored applicant,0.6670999999999996
+test,Tight margin / high loss,P1: single cut-off 550,3.1386999999999996
+test,Tight margin / high loss,Final policy: Accept zone only,3.2279999999999993
+test,Tight margin / high loss,Final policy: Accept + Review approved as is,2.5928999999999993
+test,Base,Accept every scored applicant,5.053833333333333
+test,Base,P1: single cut-off 550,6.729166666666669
+test,Base,Final policy: Accept zone only,6.372
+test,Base,Final policy: Accept + Review approved as is,6.5115
+test,Wide margin / lower loss,Accept every scored applicant,11.305433333333333
+test,Wide margin / lower loss,P1: single cut-off 550,11.990033333333333
+test,Wide margin / lower loss,Final policy: Accept zone only,11.005333333333333
+test,Wide margin / lower loss,Final policy: Accept + Review approved as is,12.2069

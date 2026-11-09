@@ -1,0 +1,13 @@
+variable,role,description,notes,description_source
+row_id,identifier,Row index in the raw file (unnamed first column).,Not a predictor,recalled from public dictionary; verify against official Data Dictionary file
+SeriousDlqin2yrs,target,Person experienced 90 days past due delinquency or worse.,"1 = default, 0 = non-default",recalled from public dictionary; verify against official Data Dictionary file
+RevolvingUtilizationOfUnsecuredLines,predictor,Total balance on credit cards and personal lines of credit (excluding real estate and installment debt) divided by the sum of credit limits.,Ratio,recalled from public dictionary; verify against official Data Dictionary file
+age,predictor,Age of borrower in years.,Years. Sensitive attribute: policy review needed,recalled from public dictionary; verify against official Data Dictionary file
+NumberOfTime30-59DaysPastDueNotWorse,predictor,Number of times borrower has been 30-59 days past due but no worse.,Count. CHECK time window vs outcome window,recalled from public dictionary; verify against official Data Dictionary file
+DebtRatio,predictor,"Monthly debt payments, alimony and living costs divided by monthly gross income.",Ratio,recalled from public dictionary; verify against official Data Dictionary file
+MonthlyIncome,predictor,Monthly income.,Currency unit undocumented,recalled from public dictionary; verify against official Data Dictionary file
+NumberOfOpenCreditLinesAndLoans,predictor,Number of open loans and lines of credit.,Count,recalled from public dictionary; verify against official Data Dictionary file
+NumberOfTimes90DaysLate,predictor,Number of times borrower has been 90 days or more past due.,Count. CHECK time window vs outcome window (leakage risk),recalled from public dictionary; verify against official Data Dictionary file
+NumberRealEstateLoansOrLines,predictor,Number of mortgage and real estate loans including home equity lines of credit.,Count,recalled from public dictionary; verify against official Data Dictionary file
+NumberOfTime60-89DaysPastDueNotWorse,predictor,Number of times borrower has been 60-89 days past due but no worse.,Count. CHECK time window vs outcome window,recalled from public dictionary; verify against official Data Dictionary file
+NumberOfDependents,predictor,Number of dependents in family excluding themselves.,Count,recalled from public dictionary; verify against official Data Dictionary file

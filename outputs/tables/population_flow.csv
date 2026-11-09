@@ -1,0 +1,4 @@
+sample,n_raw,n_modelling,n_excluded,age<18,special_code
+development,90000,89840,160,0,160
+validation,30000,29946,54,0,54
+test,30000,29944,56,1,55

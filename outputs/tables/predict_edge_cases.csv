@@ -1,0 +1,14 @@
+case,status,expected,ok,score,zone,pd,band,flags,override
+clean typical applicant,SCORED,SCORED,True,601.0,Accept,0.0129,Very low risk,0,False
+"heavy delinquency, utilisation 1.2",SCORED,SCORED,True,428.0,Decline,0.6804,Very high risk,0,False
+age 17,INELIGIBLE,INELIGIBLE,True,,,,,0,False
+special code 98,REFERRED_SPECIAL_CODE,REFERRED_SPECIAL_CODE,True,,,,,0,False
+missing age,INVALID_INPUT,INVALID_INPUT,True,,,,,0,False
+non-numeric utilisation,INVALID_INPUT,INVALID_INPUT,True,,,,,0,False
+negative income,INVALID_INPUT,INVALID_INPUT,True,,,,,0,False
+fractional count,INVALID_INPUT,INVALID_INPUT,True,,,,,0,False
+income > 0 but no debt ratio,INVALID_INPUT,INVALID_INPUT,True,,,,,0,False
+income missing,SCORED,SCORED,True,598.0,Accept,0.0151,Very low risk,1,False
+zero income,SCORED,SCORED,True,598.0,Accept,0.0151,Very low risk,1,False
+"no open lines, no utilisation",SCORED,SCORED,True,564.0,Review,0.0709,Moderate risk,1,True
+implausible utilisation 15,SCORED,SCORED,True,590.0,Review,0.0224,Low risk,1,True

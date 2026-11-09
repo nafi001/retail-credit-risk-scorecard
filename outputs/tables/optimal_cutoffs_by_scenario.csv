@@ -1,0 +1,4 @@
+scenario,R,LGD,cost_ratio_LGD_over_R,breakeven_pd,analytic_cutoff,empirical_cutoff_validation,empirical_cutoff_development,flat_region_validation,bootstrap_median,bootstrap_95pct_interval,max_profit_validation,profit_accept_all_validation
+Tight margin / high loss,0.06,0.75,12.5,0.07407407407407407,563,565,565,557-570,565.0,560-570,3.2638999999999996,0.6540000000000001
+Base,0.1,0.65,6.5,0.13333333333333333,547,547,544,531-556,547.0,537-549,6.775500000000001,5.042
+Wide margin / lower loss,0.16,0.55,3.4375,0.22535211267605632,529,531,533,506-549,531.0,528-536,12.329233333333333,11.294666666666664

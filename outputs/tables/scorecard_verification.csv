@@ -1,0 +1,13 @@
+,value
+max |exact points score - formula score|,2.2737367544323206e-13
+max |integer score - exact score|,2.39335346862822
+mean |integer score - exact score|,0.9280930777420534
+max |PD from integer score - model PD|,0.02031628648123468
+mean |PD from integer score - model PD|,0.0013671095673126713
+mean PD from integer score,0.06731074423237904
+observed default rate,0.06602849510240427
+Gini (model PD),0.711197190378789
+Gini (integer score),0.7113056280276915
+score at PD = 1/51 (expect 600),600.0
+score at odds 100:1 (expect 620),620.0
+min bin points across scorecard,0.0
